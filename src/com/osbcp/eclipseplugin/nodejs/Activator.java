@@ -1,4 +1,4 @@
-package github_eclipse_plugin_osbcp_nodejs;
+package com.osbcp.eclipseplugin.nodejs;
 
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;

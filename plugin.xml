@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+
+	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
+		<launchConfigurationType name="Node.js launcher" delegate="com.osbcp.eclipseplugin.nodejs.Erik" modes="run" id="org.eclipse.jdt.launching.javaAppletChristoffer">        
+		</launchConfigurationType>
+	</extension>
+
+<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+    <launchConfigurationTypeImage
+        icon="icon.gif"
+        configTypeID="org.eclipse.jdt.launching.javaAppletChristoffer"
+        id="org.eclipse.jdt.debug.ui.launchConfigurationTypeImage.javaAppletChristoffer">
+    </launchConfigurationTypeImage>
+</extension>
+
+<extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+    <launchConfigurationTabGroup
+        type="org.eclipse.jdt.launching.javaAppletChristoffer"
+        class="com.osbcp.eclipseplugin.nodejs.TabGroup"
+        id="org.eclipse.jdt.debug.ui.launchConfigurationTabGroup.javaApplet">
+    </launchConfigurationTabGroup>
+</extension>
+
+</plugin>
