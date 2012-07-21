@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Github_eclipse_plugin_osbcp_nodejs
+Bundle-SymbolicName: github_eclipse_plugin_osbcp_nodejs
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: github_eclipse_plugin_osbcp_nodejs.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
