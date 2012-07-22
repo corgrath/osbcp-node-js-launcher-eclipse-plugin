@@ -2,26 +2,44 @@
 <?eclipse version="3.4"?>
 <plugin>
 
-
 	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
-		<launchConfigurationType name="Node.js launcher" delegate="com.osbcp.eclipseplugin.nodejs.Erik" modes="run" id="org.eclipse.jdt.launching.javaAppletChristoffer">        
+		<launchConfigurationType name="OSBCP Node.js launcher" delegate="com.osbcp.eclipseplugin.nodejslauncher.Erik" modes="run" id="org.eclipse.jdt.launching.javaAppletChristoffer"> 
 		</launchConfigurationType>
 	</extension>
 
-<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
-    <launchConfigurationTypeImage
-        icon="icon.gif"
-        configTypeID="org.eclipse.jdt.launching.javaAppletChristoffer"
-        id="org.eclipse.jdt.debug.ui.launchConfigurationTypeImage.javaAppletChristoffer">
-    </launchConfigurationTypeImage>
-</extension>
+	<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+	    <launchConfigurationTypeImage
+	        icon="icon.gif"
+	        configTypeID="org.eclipse.jdt.launching.javaAppletChristoffer"
+	        id="org.eclipse.jdt.debug.ui.launchConfigurationTypeImage.javaAppletChristoffer">
+	    </launchConfigurationTypeImage>
+	</extension>
 
 <extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
     <launchConfigurationTabGroup
         type="org.eclipse.jdt.launching.javaAppletChristoffer"
-        class="com.osbcp.eclipseplugin.nodejs.TabGroup"
+        class="com.osbcp.eclipseplugin.nodejslauncher.TabGroup"
         id="org.eclipse.jdt.debug.ui.launchConfigurationTabGroup.javaApplet">
     </launchConfigurationTabGroup>
 </extension>
+
+
+<extension point="org.eclipse.debug.ui.launchShortcuts">
+    <shortcut
+        id="org.eclipse.jdt.debug.ui.javaAppletShortcutSandra"
+        class="com.osbcp.eclipseplugin.nodejslauncher.Sandra"
+        label="Java Applet yuea 9879"
+        icon="icon.gif"
+        modes="run">
+            <perspective id="org.eclipse.jdt.ui.JavaPerspective"/>
+            <perspective id="org.eclipse.jdt.ui.JavaHierarchyPerspective"/>
+            <perspective id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+            <perspective id="org.eclipse.debug.ui.DebugPerspective"/>
+    </shortcut>
+</extension>
+
+	<extension point="org.eclipse.ui.preferencePages">
+		<page id="com.osbcp.eclipseplugin.nodejslauncher.PluginPreferencePage" name="OSBCP Node.js Launcher" class="com.osbcp.eclipseplugin.nodejslauncher.PluginPreferencePage"/>
+	</extension>
 
 </plugin>

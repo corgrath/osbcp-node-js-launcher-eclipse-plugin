@@ -3,13 +3,14 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Github_eclipse_plugin_osbcp_nodejs
 Bundle-SymbolicName: github_eclipse_plugin_osbcp_nodejs;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: com.osbcp.eclipseplugin.nodejs.Activator
+Bundle-Activator: com.osbcp.eclipseplugin.nodejslauncher.NodeJSLauncherPlugin
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ org.eclipse.ui.console;bundle-version="3.5.100"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Import-Package: org.eclipse.debug.core,
  org.eclipse.debug.core.model,
  org.eclipse.debug.internal.ui,
  org.eclipse.debug.ui
-Bundle-Vendor: Christoffer Pettersson
+Bundle-Vendor: Christoffer Pettersson, christoffer@christoffer.me
 Bundle-ActivationPolicy: lazy

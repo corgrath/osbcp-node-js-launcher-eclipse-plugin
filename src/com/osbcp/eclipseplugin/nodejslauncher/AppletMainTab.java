@@ -1,4 +1,4 @@
-package com.osbcp.eclipseplugin.nodejs;
+package com.osbcp.eclipseplugin.nodejslauncher;
 
 
 import org.eclipse.core.runtime.CoreException;

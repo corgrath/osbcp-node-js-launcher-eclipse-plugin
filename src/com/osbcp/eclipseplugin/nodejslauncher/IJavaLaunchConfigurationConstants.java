@@ -1,4 +1,4 @@
-package com.osbcp.eclipseplugin.nodejs;
+package com.osbcp.eclipseplugin.nodejslauncher;
 
 public class IJavaLaunchConfigurationConstants {
 
